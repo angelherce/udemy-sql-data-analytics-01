@@ -6,7 +6,7 @@
 
 ## Contenido del cusro
 
-- [ ] **Sección 01:** _Introduction to databases, SQL, and MySQL_
+- [x] **Sección 01:** _Introduction to databases, SQL, and MySQL_
 - [ ] **Sección 02:** _SQL Theory_
 - [ ] **Sección 03:** _Basic database terminology_
 - [ ] **Sección 04:** _Installing MySQL and getting acquainted with the interface_

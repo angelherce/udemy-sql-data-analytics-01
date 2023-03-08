@@ -8,7 +8,7 @@
 
 - [x] **Sección 01:** _Introduction to databases, SQL, and MySQL_
 - [x] **Sección 02:** _SQL Theory_
-- [ ] **Sección 03:** _Basic database terminology_
+- [x] **Sección 03:** _Basic database terminology_
 - [ ] **Sección 04:** _Installing MySQL and getting acquainted with the interface_
 - [ ] **Sección 05:** _First steps in SQL_
 - [ ] **Sección 06:** _MySQL constraints_

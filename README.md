@@ -12,7 +12,7 @@
 - [x] **Sección 04:** _Installing MySQL and getting acquainted with the interface_
 - [x] **Sección 05:** _First steps in SQL_
 - [x] **Sección 06:** _MySQL constraints_
-- [ ] **Sección 07:** _SQL best practices_
+- [x] **Sección 07:** _SQL best practices_
 - [ ] **Sección 08:** _Loading the 'employees' database_
 - [ ] **Sección 09:** _SQL SELECT statement_
 - [ ] **Sección 10:** _SQL INSERT statement_

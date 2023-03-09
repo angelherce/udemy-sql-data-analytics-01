@@ -45,3 +45,6 @@ CREATE TABLE companies (
 ALTER TABLE sales
     ADD FOREIGN KEY( customer_id ) REFERENCES customers( customer_id )
         ON DELETE CASCADE;
+
+ALTER TABLE customers
+    DROP INDEX email_address;

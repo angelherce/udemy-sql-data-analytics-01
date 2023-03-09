@@ -55,6 +55,12 @@ ALTER TABLE customers
 ALTER TABLE customers
     ALTER COLUMN number_of_complaints DROP DEFAULT;
 
+ALTER TABLE companies
+    MODIFY headquarters_phone_number VARCHAR( 255 ) NULL;
+
+ALTER TABLE companies
+    CHANGE COLUMN headquarters_phone_number headquarters_phone_number VARCHAR( 255 ) NOT NULL;
+
 DROP TABLE companies;
 
 INSERT INTO customers ( first_name, last_name, gender, email_address )

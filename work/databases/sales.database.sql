@@ -25,3 +25,6 @@ SELECT * FROM sales.sales;
 
 SELECT * FROM customers;
 SELECT * FROM sales.customers;
+
+DROP TABLE sales;
+DROP TABLE sales.customers;

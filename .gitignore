@@ -1,2 +1,3 @@
 .idea
-**/docker/database
+
+/docker/mysql/data

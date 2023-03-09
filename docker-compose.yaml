@@ -1,0 +1,41 @@
+version: "3.7"
+
+networks:
+  net-mysql:
+
+services:
+  mysql:
+    image: mysql:8.0.32
+    container_name: mysql
+    hostname: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: root
+    networks:
+      - net-mysql
+    ports:
+      - '3306:3306'
+    volumes:
+      - './docker/mysql/data:/var/lib/mysql'
+      - './docker/mysql/init-sql:/docker-entrypoint-initdb.d'
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin
+    hostname: phpmyadmin
+    depends_on:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root
+
+      PMA_ARBITRARY: 1
+    networks:
+      - net-mysql
+    ports:
+      - '8080:80'
+    volumes:
+      - './docker/phpmyadmin/config/config.inc.php:/etc/phpmyadmin/config.inc.php'

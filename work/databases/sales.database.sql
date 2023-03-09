@@ -19,3 +19,9 @@ CREATE TABLE customers (
     email_address VARCHAR( 255 ) NOT NULL,
     number_of_complaints INT NOT NULL
 );
+
+SELECT * FROM sales;
+SELECT * FROM sales.sales;
+
+SELECT * FROM customers;
+SELECT * FROM sales.customers;

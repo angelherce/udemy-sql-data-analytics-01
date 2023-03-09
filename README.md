@@ -10,7 +10,7 @@
 - [x] **Sección 02:** _SQL Theory_
 - [x] **Sección 03:** _Basic database terminology_
 - [x] **Sección 04:** _Installing MySQL and getting acquainted with the interface_
-- [ ] **Sección 05:** _First steps in SQL_
+- [x] **Sección 05:** _First steps in SQL_
 - [ ] **Sección 06:** _MySQL constraints_
 - [ ] **Sección 07:** _SQL best practices_
 - [ ] **Sección 08:** _Loading the 'employees' database_

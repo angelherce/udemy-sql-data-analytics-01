@@ -18,7 +18,7 @@ CREATE TABLE customers (
     first_name VARCHAR( 255 ) NOT NULL,
     last_name VARCHAR( 255 ) NOT NULL,
     email_address VARCHAR( 255 ) NOT NULL,
-    number_of_complaints INT NOT NULL,
+    number_of_complaints INT NOT NULL DEFAULT 1,
 
     PRIMARY KEY( customer_id ),
     UNIQUE KEY( email_address )
@@ -48,7 +48,11 @@ ALTER TABLE sales
 
 ALTER TABLE customers
     ADD COLUMN gender ENUM('M','F') AFTER last_name,
+    CHANGE COLUMN number_of_complaints number_of_complaints INT NOT NULL DEFAULT 0,
     DROP INDEX email_address;
 
-INSERT INTO customers ( first_name, last_name, gender, email_address, number_of_complaints )
-    VALUES ( 'John', 'Mackinley', 'M', 'john.mckinley@365careers.com', 0 );
+ALTER TABLE customers
+    ALTER COLUMN number_of_complaints DROP DEFAULT;
+
+INSERT INTO customers ( first_name, last_name, gender, email_address )
+    VALUES ( 'John', 'Mackinley', 'M', 'john.mckinley@365careers.com' );

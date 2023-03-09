@@ -13,7 +13,7 @@
 - [x] **Sección 05:** _First steps in SQL_
 - [x] **Sección 06:** _MySQL constraints_
 - [x] **Sección 07:** _SQL best practices_
-- [ ] **Sección 08:** _Loading the 'employees' database_
+- [x] **Sección 08:** _Loading the 'employees' database_
 - [ ] **Sección 09:** _SQL SELECT statement_
 - [ ] **Sección 10:** _SQL INSERT statement_
 - [ ] **Sección 11:** _SQL UPDATE statement_

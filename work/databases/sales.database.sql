@@ -36,10 +36,11 @@ CREATE TABLE items (
 
 CREATE TABLE companies (
 	company_id VARCHAR( 255 ) NOT NULL,
-    company_name VARCHAR( 255 ) NOT NULL,
-    headquarters_phone_number  INT( 12 ) NOT NULL,
+    company_name VARCHAR( 255 ) NOT NULL DEFAULT 'X',
+    headquarters_phone_number VARCHAR( 255 ) NOT NULL,
 
-    PRIMARY KEY( company_id )
+    PRIMARY KEY( company_id ),
+    UNIQUE KEY( headquarters_phone_number )
 );
 
 ALTER TABLE sales
@@ -53,6 +54,8 @@ ALTER TABLE customers
 
 ALTER TABLE customers
     ALTER COLUMN number_of_complaints DROP DEFAULT;
+
+DROP TABLE companies;
 
 INSERT INTO customers ( first_name, last_name, gender, email_address )
     VALUES ( 'John', 'Mackinley', 'M', 'john.mckinley@365careers.com' );

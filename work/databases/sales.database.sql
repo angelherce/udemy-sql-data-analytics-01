@@ -20,7 +20,8 @@ CREATE TABLE customers (
     email_address VARCHAR( 255 ) NOT NULL,
     number_of_complaints INT NOT NULL,
 
-    PRIMARY KEY( customer_id )
+    PRIMARY KEY( customer_id ),
+    UNIQUE KEY( email_address )
 );
 
 CREATE TABLE items (
@@ -44,8 +45,3 @@ CREATE TABLE companies (
 ALTER TABLE sales
     ADD FOREIGN KEY( customer_id ) REFERENCES customers( customer_id )
         ON DELETE CASCADE;
-
-DROP TABLE sales;
-DROP TABLE customers;
-DROP TABLE items;
-DROP TABLE companies;

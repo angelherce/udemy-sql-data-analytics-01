@@ -4,6 +4,15 @@ CREATE DATABASE IF NOT EXISTS sales CHARACTER SET utf8mb4 COLLATE utf8mb4_genera
 
 USE sales;
 
+CREATE TABLE sales (
+	purchase_number INT NOT NULL AUTO_INCREMENT,
+    date_of_purchase DATE NOT NULL,
+    customer_id INT,
+    item_code VARCHAR( 10 ) NOT NULL,
+
+    PRIMARY KEY( purchase_number )
+);
+
 CREATE TABLE customers (
 	customer_id INT NOT NULL AUTO_INCREMENT,
     first_name VARCHAR( 255 ) NOT NULL,
@@ -12,17 +21,6 @@ CREATE TABLE customers (
     number_of_complaints INT NOT NULL,
 
     PRIMARY KEY( customer_id )
-);
-
-CREATE TABLE sales (
-	purchase_number INT NOT NULL AUTO_INCREMENT,
-    date_of_purchase DATE NOT NULL,
-    customer_id INT,
-    item_code VARCHAR( 10 ) NOT NULL,
-
-    PRIMARY KEY( purchase_number ),
-    FOREIGN KEY( customer_id ) REFERENCES customers( customer_id )
-        ON DELETE CASCADE
 );
 
 CREATE TABLE items (
@@ -42,3 +40,7 @@ CREATE TABLE companies (
 
     PRIMARY KEY( company_id )
 );
+
+ALTER TABLE sales
+    ADD FOREIGN KEY( customer_id ) REFERENCES customers( customer_id )
+        ON DELETE CASCADE;

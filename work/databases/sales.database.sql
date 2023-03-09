@@ -22,3 +22,21 @@ CREATE TABLE customers (
 
     PRIMARY KEY( customer_id )
 );
+
+CREATE TABLE items (
+	item_code VARCHAR( 255 ) NOT NULL,
+    item VARCHAR( 255 ) NOT NULL,
+    unit_price NUMERIC( 10, 2 ) NOT NULL,
+    company_id VARCHAR( 255 ) NULL,
+    number_of_complaints INT NOT NULL,
+
+    PRIMARY KEY( item_code )
+);
+
+CREATE TABLE companies (
+	company_id VARCHAR( 255 ) NOT NULL,
+    company_name VARCHAR( 255 ) NOT NULL,
+    headquarters_phone_number  INT( 12 ) NOT NULL,
+
+    PRIMARY KEY( company_id )
+);

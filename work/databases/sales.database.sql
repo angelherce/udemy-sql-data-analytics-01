@@ -44,3 +44,8 @@ CREATE TABLE companies (
 ALTER TABLE sales
     ADD FOREIGN KEY( customer_id ) REFERENCES customers( customer_id )
         ON DELETE CASCADE;
+
+DROP TABLE sales;
+DROP TABLE customers;
+DROP TABLE items;
+DROP TABLE companies;

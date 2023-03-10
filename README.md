@@ -15,7 +15,7 @@
 - [x] **Sección 07:** _SQL best practices_
 - [x] **Sección 08:** _Loading the 'employees' database_
 - [x] **Sección 09:** _SQL SELECT statement_
-- [ ] **Sección 10:** _SQL INSERT statement_
+- [x] **Sección 10:** _SQL INSERT statement_
 - [ ] **Sección 11:** _SQL UPDATE statement_
 - [ ] **Sección 12:** _SQL DELETE statement_
 - [ ] **Sección 13:** _MySQL - Aggregage functions_

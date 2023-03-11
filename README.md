@@ -18,7 +18,7 @@
 - [x] **Sección 10:** _SQL INSERT statement_
 - [x] **Sección 11:** _SQL UPDATE statement_
 - [x] **Sección 12:** _SQL DELETE statement_
-- [ ] **Sección 13:** _MySQL - Aggregage functions_
+- [x] **Sección 13:** _MySQL - Aggregage functions_
 - [ ] **Sección 14:** _SQL Joins_
 - [ ] **Sección 15:** _SQL Subqueries_
 - [ ] **Sección 16:** _SQL Self Join_

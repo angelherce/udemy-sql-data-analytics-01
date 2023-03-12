@@ -12,6 +12,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: admin
       MYSQL_PASSWORD: root
+      '@@global.sql_mode': ''
     networks:
       - net-mysql
     ports:

@@ -22,7 +22,7 @@
 - [x] **Sección 14:** _SQL Joins_
 - [x] **Sección 15:** _SQL Subqueries_
 - [x] **Sección 16:** _SQL Self Join_
-- [ ] **Sección 17:** _SQL Views_
+- [x] **Sección 17:** _SQL Views_
 - [ ] **Sección 18:** _Stored routines_
 - [ ] **Sección 19:** _Advanced SQL Topics_
 - [ ] **Sección 20:** _SQL Window Functions_

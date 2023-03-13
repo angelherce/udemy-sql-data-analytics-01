@@ -23,7 +23,7 @@
 - [x] **Sección 15:** _SQL Subqueries_
 - [x] **Sección 16:** _SQL Self Join_
 - [x] **Sección 17:** _SQL Views_
-- [ ] **Sección 18:** _Stored routines_
+- [x] **Sección 18:** _Stored routines_
 - [ ] **Sección 19:** _Advanced SQL Topics_
 - [ ] **Sección 20:** _SQL Window Functions_
 - [ ] **Sección 21:** _SQL Common Table Expressions (CTEs)_

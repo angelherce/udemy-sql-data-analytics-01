@@ -20,7 +20,7 @@
 - [x] **Sección 12:** _SQL DELETE statement_
 - [x] **Sección 13:** _MySQL - Aggregage functions_
 - [x] **Sección 14:** _SQL Joins_
-- [ ] **Sección 15:** _SQL Subqueries_
+- [x] **Sección 15:** _SQL Subqueries_
 - [ ] **Sección 16:** _SQL Self Join_
 - [ ] **Sección 17:** _SQL Views_
 - [ ] **Sección 18:** _Stored routines_
